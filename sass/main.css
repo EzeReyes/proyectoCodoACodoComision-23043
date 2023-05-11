@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(212.73, 9.4%, 22.94%);
+  width: -webkit-fill-available;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4rem;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li {
+  margin-right: 1rem;
+}
+nav a {
+  color: hsl(210, 3.77%, 58.43%);
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+}
+
+.navTitle {
+  display: flex;
+  align-items: center;
+}
+.navTitle img {
+  margin-right: 1rem;
+  height: 4rem;
+  width: auto;
+}
+.navTitle p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.linkComprar {
+  color: hsl(134, 52%, 37%);
+}
+.linkComprar:hover {
+  cursor: pointer;
+  color: hsl(134.23, 100%, 30.71%);
+  text-shadow: rgba(255, 255, 255, 0.664) 0px 0px 5px;
+}
+
+.Conf {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(20, 22, 28, 0.75)), url(../images/ba1.jpg);
+  background-size: cover;
+  height: 25rem;
+  width: -webkit-fill-available;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-right: 4rem;
+  background-position: center;
+  padding-bottom: 8rem;
+}
+.Conf div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 32rem;
+  align-items: end;
+  text-align: end;
+}
+.Conf .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.Conf .buttons button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+}
+.Conf .buttons .btnTransparent {
+  color: white;
+  background-color: transparent;
+  border: 1px white solid;
+  margin-right: 1rem;
+}
+.Conf .buttons .btnGreen {
+  background-color: hsl(132.86, 60.58%, 40.78%);
+  border: 1px solid hsl(132.86, 60.58%, 40.78%);
+  color: white;
+}
+.Conf .buttons .btnGreen:hover {
+  cursor: pointer;
+}
+
+#tituloOradores, #nuevoOrador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 2rem;
+}
+#tituloOradores b, #nuevoOrador b {
+  font-size: 3rem;
+}
+
+.oradores {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+.oradores .container {
+  width: 12rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.oradores .container img {
+  width: -webkit-fill-available;
+  border-radius: 10px 10px 0px 0px;
+}
+.oradores .container .materias {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 10px;
+}
+.oradores .container .materias h3 {
+  background-color: rgba(128, 128, 128, 0.616);
+  padding: 2px;
+  border-radius: 2px;
+}
+.oradores .container .nombre {
+  margin: 1rem;
+  text-align: center;
+}
+.oradores .container .descripcion {
+  font-size: 10px;
+  text-align: justify;
+  padding: 0px 10px 10px;
+}
+
+.honolulu {
+  display: flex;
+  width: -webkit-fill-available;
+  height: 25rem;
+  background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
+}
+.honolulu img {
+  width: 50%;
+}
+.honolulu .honoluluInfo {
+  color: white;
+  text-align: justify;
+  padding: 2rem;
+}
+.honolulu .honoluluInfo h3, .honolulu .honoluluInfo p {
+  padding-bottom: 1rem;
+}
+.honolulu .honoluluInfo button {
+  background-color: transparent;
+  border: 1 px solid white;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+.honolulu .honoluluInfo button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.prevForm {
+  text-align: center;
+}
+
+.formOrador {
+  margin: 1rem 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.formOrador .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.formOrador .input input {
+  padding: 10px;
+}
+.formOrador textarea {
+  padding: 10px;
+  width: 70%;
+  height: 5rem;
+}
+.formOrador .btnEnviar {
+  margin: 1rem;
+  padding: 10px;
+  color: white;
+  background-color: #2f2e2d;
+  border-radius: 2px;
+}
+.formOrador .btnEnviar:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}/*# sourceMappingURL=main.css.map */

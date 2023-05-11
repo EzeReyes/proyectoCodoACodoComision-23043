@@ -1,0 +1,243 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(212.73deg 9.4% 22.94%);
+    width: -webkit-fill-available;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+        li {
+            margin-right: 1rem;
+        }
+            a {
+                color: hsl(210deg 3.77% 58.43%);
+                text-decoration: none;
+            &:hover {
+                color: white;
+        }
+}
+}
+
+.navTitle {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 1rem;
+        height: 4rem;
+        width: auto;
+    }
+    p {
+        color: white;
+        font-size: 1.3rem;
+    }
+}
+
+.linkComprar {
+    color: hsl(134, 52%, 37%);
+&:hover {
+    cursor: pointer;
+    color: hsl(134.23deg 100% 30.71%);
+    text-shadow: rgba(255, 255, 255, 0.664) 0px 0px 5px;
+    ;
+}
+}
+
+.Conf {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgb(20 22 28 / 75%)), url(../images/ba1.jpg);
+    background-size: cover;
+    height: 25rem;
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 4rem;
+    background-position: center;
+    padding-bottom: 8rem;
+    div {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 32rem;
+        align-items: end;
+        text-align: end;
+    }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            button {
+                padding: 0.5rem;
+                font-size: 1rem;
+                margin-top: 1rem;
+                border-radius: 0.2rem;
+            }
+            .btnTransparent{
+                color: white;
+                background-color: transparent;
+                border: 1px white solid;
+                margin-right: 1rem;
+            }
+            .btnGreen {
+                background-color: hsl(132.86deg 60.58% 40.78%);
+                border: 1px solid hsl(132.86deg 60.58% 40.78%);
+                color: white;
+            &:hover {
+                cursor: pointer;
+            }
+            }
+        }
+    }
+
+
+    #tituloOradores, #nuevoOrador {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem;
+        b {
+            font-size: 3rem;
+        }
+}
+
+
+.oradores {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    .container {
+        width: 12rem;
+        border: 1px solid gray;
+        border-radius: 10px;
+        img {
+            width: -webkit-fill-available;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .materias {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 1rem;
+            font-size: 10px;
+            h3 {
+                background-color: rgba(128, 128, 128, 0.616);
+                padding: 2px;
+                border-radius: 2px;
+            }
+        }
+        .nombre {
+            margin: 1rem;
+            text-align: center;
+        }
+        .descripcion {
+            font-size: 10px;
+            text-align: justify;
+            padding: 0px 10px 10px;
+        }
+}
+}
+
+.honolulu {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 25rem;
+    background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
+        img {
+            width: 50%;
+        }
+        .honoluluInfo {
+            color: white;
+            text-align: justify;
+            padding: 2rem;
+            h3, p {
+                padding-bottom: 1rem;
+            }
+            button {
+                background-color: transparent;
+                border: 1 px solid white;
+                color: white;
+                padding: 2px;
+                border-radius: 5px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: black;
+                }
+            }
+        }
+}
+
+.prevForm {
+    text-align: center;
+}
+
+.formOrador {
+    margin: 1rem 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .input {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 1rem;
+        input {
+            padding: 10px;
+        }
+    }
+    textarea {
+        padding: 10px;
+        width: 70%;
+        height: 5rem;
+    }
+    .btnEnviar {
+        margin: 1rem;
+        padding: 10px;
+        color: white;
+        background-color: #2f2e2d;
+        border-radius: 2px;
+        &:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
+    a {
+        color: black;
+        text-decoration: none;
+    &:hover {
+        color: white;
+}
+    }
+}
+
