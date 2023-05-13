@@ -95,6 +95,11 @@ nav a:hover {
   border: 1px white solid;
   margin-right: 1rem;
 }
+.Conf .buttons .btnTransparent:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
 .Conf .buttons .btnGreen {
   background-color: hsl(132.86, 60.58%, 40.78%);
   border: 1px solid hsl(132.86, 60.58%, 40.78%);
@@ -102,6 +107,8 @@ nav a:hover {
 }
 .Conf .buttons .btnGreen:hover {
   cursor: pointer;
+  color: hsl(132.86, 60.58%, 40.78%);
+  background-color: white;
 }
 
 #tituloOradores, #nuevoOrador {
@@ -114,6 +121,9 @@ nav a:hover {
 }
 #tituloOradores b, #nuevoOrador b {
   font-size: 3rem;
+}
+#tituloOradores:hover, #nuevoOrador:hover {
+  text-decoration: underline;
 }
 
 .oradores {
@@ -232,4 +242,22 @@ footer a {
 }
 footer a:hover {
   color: white;
+}
+
+.conferencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(20, 22, 28, 0.75)), url(../images/BIGDATA.jpg);
+  background-size: cover;
+  width: 100vw;
+  color: white;
+}
+.conferencia h2 {
+  padding: 1rem;
+  font-size: 3rem;
+}
+.conferencia p {
+  padding: 1rem;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
