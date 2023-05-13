@@ -2,7 +2,7 @@ const fun = (el) => {
     console.log(`${el.id}`)
     }
 
-
+console.log(document.location.href);
 
 const cardHtml = ( array, nodo ) => {
     const generarNodos = array.reduce(( acc, element) => {
