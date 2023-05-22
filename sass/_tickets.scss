@@ -1,0 +1,70 @@
+.containerCategory {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: center;
+    .category {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+        height: 10rem;
+        justify-content: space-around;
+        margin: 10px;
+        border-radius: 10%;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+        background-color: floralwhite;
+    }
+}
+
+.venta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+.containerDatos{
+    margin: 3rem;
+.datos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+        margin: 1rem;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+.correo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+        width: 352px;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+}
+
+.containerCompra, .total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    input, select {
+        margin: 1rem;
+        height: 30px;
+        border-radius: 5px;
+    }
+}
+
+.total {
+    input {
+    background-color: #cce5ff;
+}
+}
+

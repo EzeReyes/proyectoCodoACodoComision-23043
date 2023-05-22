@@ -8,14 +8,16 @@
     <link rel="shortcut icon" href="../images/codoacodo.png" type="image/x-icon">
     <title>CodoACodo</title>
 </head>
+
 <body>
-    <div>
+    <div class="nav-container">
         <nav>
             <div class="navTitle">
                 <a href="./index.html"><img src="./images/codoacodo.png" alt="codoacodo"></a>
                 <p>Conf Bs As</p>
             </div>
-            <div>
+
+            <div class="nav activo">
                 <ul>
                     <li><a href="./pages/conference.html" target="_parent">La conferencia</a></li> 
                     <li><a href="#tituloOradores" target="_parent">Los oradores</a></li> 
@@ -24,8 +26,17 @@
                     <li><a href="./pages/tickets.html" target="_parent" class="linkComprar">Comprar tickets</a></li> 
                 </ul>
             </div>
+
+            <button class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+
         </nav>
     </div>
+
+
     <section class="Conf">
         <div>
             <h1>Conf Bs As</h1>
@@ -36,11 +47,13 @@
             </div>
         </div>
     </section>
+
     <div id="tituloOradores">
         <p>Conoce a nuestros<br><b>Oradores</b></br></p>
     </div>
     <div class="oradores">
     </div>
+
     <div class="honolulu">
         <img src="./images/honolulu.jpg" alt="honolulu">
         <div class="honoluluInfo">
@@ -49,6 +62,7 @@
             <a href="./pages/conference.html#sectionOne"><button>Conocer más</button></a>
         </div>
     </div>
+
     <div id="nuevoOrador">
         <p>Conviértete en un<br><b>Orador</b></br></p>
     </div>
@@ -62,6 +76,8 @@
         <p>Recuerda incluir un título para tu charla.</p>
         <input class="btnEnviar" type="submit" value="Enviar">
     </form>
+
+
     <footer>
         <a href="">Contáctanos</a>
         <a href="./pages/conference.html#temasATratar">Conferencias</a>

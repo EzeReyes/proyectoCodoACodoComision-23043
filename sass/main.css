@@ -15,6 +15,9 @@ nav {
   justify-content: space-around;
   padding: 0 4rem;
 }
+nav .button {
+  display: none;
+}
 nav ul {
   display: flex;
   flex-direction: row;
@@ -244,6 +247,56 @@ footer a:hover {
   color: white;
 }
 
+@media (min-width: 400px) and (max-width: 650px) {
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(212.73, 9.4%, 22.94%);
+    width: -webkit-fill-available;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+  }
+  .nav-container nav .button {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-container nav ul {
+    width: 100%;
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-wrap: column nowrap;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .nav-container nav li {
+    margin-right: 1rem;
+  }
+  .nav-container nav a {
+    color: hsl(210, 3.77%, 58.43%);
+    text-decoration: none;
+  }
+  .nav-container nav a:hover {
+    color: white;
+  }
+  .nav-container .navTitle {
+    display: flex;
+    align-items: center;
+  }
+  .nav-container .navTitle img {
+    margin-right: 1rem;
+    height: 4rem;
+    width: auto;
+  }
+  .nav-container .navTitle p {
+    display: none;
+  }
+}
 #sectionOne {
   display: flex;
   flex-direction: column;
@@ -354,4 +407,71 @@ footer a:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.containerCategory {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  justify-content: center;
+}
+.containerCategory .category {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: space-around;
+  margin: 10px;
+  border-radius: 10%;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: floralwhite;
+}
+
+.venta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.containerDatos {
+  margin: 3rem;
+}
+.containerDatos .datos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerDatos .datos input {
+  margin: 1rem;
+  height: 30px;
+  border-radius: 5px;
+}
+.containerDatos .correo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerDatos .correo input {
+  width: 352px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.containerCompra, .total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.containerCompra input, .containerCompra select, .total input, .total select {
+  margin: 1rem;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.total input {
+  background-color: #cce5ff;
 }/*# sourceMappingURL=main.css.map */

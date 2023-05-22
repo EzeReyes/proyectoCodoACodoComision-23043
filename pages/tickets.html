@@ -25,12 +25,64 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </div>   
+        <div class="containerCategory">
+            <div class="category">
+                <p>Estudiante</p>
+                <p>Tienen un descuento</p>
+                <b>80%</b>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="category">
+                <p>Trainee</p>
+                <p>Tienen un descuento</p>
+                <b>50%</b>
+                <p>* presentar documentación</p>
+            </div>
+            <div class="category">
+                <p>Junior</p>
+                <p>Tienen un descuento</p>
+                <b>15%</b>
+                <p>* presentar documentación</p>
+            </div>
+        </div>
+        <div class="venta">
+            <h3>VENTA</h3>
+            <h3>VALOR DE TICKET $200</h3>
+        </div>  
+        <div class="containerDatos">
+            <div class="datos">
+                <input type="text" placeholder="Nombre" id="nombre" required/>
+                <input type="text" placeholder="Apellido" id="apellido" required/>
+            </div>
+            <div class="correo">
+                <input type="email" placeholder="Correo" id="correo" required/>
+            </div>
+        </div>
+        <div class="containerCompra">
+            <div>
+                <p>Cantidad</p>
+                <input type="number" placeholder="Entradas" onkeyup="seleccionar()" id="entradas"/>
+            </div>
+            <div>
+                <p>Categoria</p>
+                <select name="select" id="select" onchange="seleccionar()" required>
+                    <option selected value="0">Seleccione una opción</option>
+                    <option  value="80">Estudiante</option>
+                    <option  value="50">Trainee</option>
+                    <option  value="15">Junior</option>
+                </select>
+            </div>
+        </div>
+        <div class="total">
+            <input id="output" type="text" value="Total a Pagar: $"placeholder="precio total" disabled>
+        </div>
     <footer>
         <a href="">Contáctanos</a>
         <a href="./pages/conference.html#temasATratar">Conferencias</a>
         <a href="">Términos y condiciones</a>
         ©️EzeReyes2023
     </footer>
+    <script src="../js/tickets.js"></script>
 </body>
 </html>
