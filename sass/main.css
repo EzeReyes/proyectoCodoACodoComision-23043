@@ -248,23 +248,35 @@ footer a:hover {
 }
 
 @media (min-width: 400px) and (max-width: 650px) {
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-    background-color: hsl(212.73, 9.4%, 22.94%);
-    width: -webkit-fill-available;
-    height: 5rem;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 4rem;
+  header {
+    background: black;
   }
-  .nav-container nav .button {
+  header .btnHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header img {
+    margin-right: 1rem;
+    height: 4rem;
+    width: auto;
+  }
+  header p {
+    display: none;
+  }
+  header .logo {
+    text-decoration: none;
+    color: gray;
+  }
+  header .button {
     display: block;
     cursor: pointer;
+    background-color: darkgray;
+    border-radius: 20%;
+    box-shadow: 0.1px 0px 1px 1px white;
   }
-  .nav-container nav ul {
+  header .nav {
     width: 100%;
-    /* display: none; */
     height: 0;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -274,27 +286,98 @@ footer a:hover {
     justify-content: center;
     pointer-events: none;
   }
-  .nav-container nav li {
-    margin-right: 1rem;
-  }
-  .nav-container nav a {
-    color: hsl(210, 3.77%, 58.43%);
-    text-decoration: none;
-  }
-  .nav-container nav a:hover {
-    color: white;
-  }
-  .nav-container .navTitle {
-    display: flex;
-    align-items: center;
-  }
-  .nav-container .navTitle img {
-    margin-right: 1rem;
-    height: 4rem;
+  header .nav.activo {
+    height: auto;
+    pointer-events: auto;
     width: auto;
   }
-  .nav-container .navTitle p {
-    display: none;
+  header ul {
+    flex-direction: column;
+  }
+  header li {
+    margin: 1rem 0;
+  }
+  header a {
+    text-decoration: none;
+    color: gray;
+  }
+  header:hover {
+    color: white;
+  }
+  .oradores {
+    flex-direction: column;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    align-items: center;
+  }
+  .oradores .container {
+    width: 12rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+  .Conf {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(20, 22, 28, 0.75)), url(../images/ba1.jpg);
+    background-size: cover;
+    height: 23rem;
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    padding: 0;
+  }
+  .Conf div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 16rem;
+    align-items: initial;
+    text-align: center;
+  }
+  .Conf .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  }
+  .Conf .buttons button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+  }
+  .Conf .buttons .btnTransparent {
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    margin-right: 1rem;
+  }
+  .Conf .buttons .btnTransparent:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+  }
+  .Conf .buttons .btnGreen {
+    background-color: hsl(132.86, 60.58%, 40.78%);
+    border: 1px solid hsl(132.86, 60.58%, 40.78%);
+    color: white;
+  }
+  .Conf .buttons .btnGreen:hover {
+    cursor: pointer;
+    color: hsl(132.86, 60.58%, 40.78%);
+    background-color: white;
+  }
+  .honolulu {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 42rem;
+    background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
+    flex-direction: column;
+  }
+  .honolulu img {
+    width: 100%;
   }
 }
 #sectionOne {
