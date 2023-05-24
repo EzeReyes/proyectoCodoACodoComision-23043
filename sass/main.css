@@ -5,60 +5,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  background-color: hsl(212.73, 9.4%, 22.94%);
-  width: -webkit-fill-available;
-  height: 5rem;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 4rem;
-}
-nav .button {
-  display: none;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  align-items: center;
-  justify-content: space-between;
-}
-nav li {
-  margin-right: 1rem;
-}
-nav a {
-  color: hsl(210, 3.77%, 58.43%);
-  text-decoration: none;
-}
-nav a:hover {
-  color: white;
-}
-
-.navTitle {
-  display: flex;
-  align-items: center;
-}
-.navTitle img {
-  margin-right: 1rem;
-  height: 4rem;
-  width: auto;
-}
-.navTitle p {
-  color: white;
-  font-size: 1.3rem;
-}
-
-.linkComprar {
-  color: hsl(134, 52%, 37%);
-}
-.linkComprar:hover {
-  cursor: pointer;
-  color: hsl(134.23, 100%, 30.71%);
-  text-shadow: rgba(255, 255, 255, 0.664) 0px 0px 5px;
-}
-
 .Conf {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(20, 22, 28, 0.75)), url(../images/ba1.jpg);
   background-size: cover;
@@ -232,78 +178,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 5rem;
-  background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
-}
-footer a {
-  color: black;
-  text-decoration: none;
-}
-footer a:hover {
-  color: white;
-}
-
 @media (min-width: 400px) and (max-width: 650px) {
-  header {
-    background: black;
-  }
-  header .btnHeader {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  header img {
-    margin-right: 1rem;
-    height: 4rem;
-    width: auto;
-  }
-  header p {
-    display: none;
-  }
-  header .logo {
-    text-decoration: none;
-    color: gray;
-  }
-  header .button {
-    display: block;
-    cursor: pointer;
-    background-color: darkgray;
-    border-radius: 20%;
-    box-shadow: 0.1px 0px 1px 1px white;
-  }
-  header .nav {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    display: flex;
-    flex-wrap: column nowrap;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-  }
-  header .nav.activo {
-    height: auto;
-    pointer-events: auto;
-    width: auto;
-  }
-  header ul {
-    flex-direction: column;
-  }
-  header li {
-    margin: 1rem 0;
-  }
-  header a {
-    text-decoration: none;
-    color: gray;
-  }
-  header:hover {
-    color: white;
-  }
   .oradores {
     flex-direction: column;
     width: -webkit-fill-available;
@@ -311,10 +186,14 @@ footer a:hover {
     align-items: center;
   }
   .oradores .container {
-    width: 12rem;
+    width: 20rem;
     border: 1px solid gray;
     border-radius: 10px;
     margin: 2rem;
+    padding: 1rem;
+  }
+  .oradores .container .descripcion {
+    font-size: 15px;
   }
   .Conf {
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(20, 22, 28, 0.75)), url(../images/ba1.jpg);
@@ -557,4 +436,151 @@ footer a:hover {
 
 .total input {
   background-color: #cce5ff;
+}
+
+.btnHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background-color: #000000;
+}
+.btnHeader img {
+  margin-right: 1rem;
+  height: 4rem;
+  width: auto;
+}
+.btnHeader p {
+  color: black;
+  font-size: 1.3rem;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px yellow, 0 0 1em blue, 0 0 0.2em blue;
+}
+.btnHeader .button {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(212.73, 9.4%, 22.94%);
+  width: -webkit-fill-available;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4rem;
+}
+nav .button {
+  display: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li {
+  margin-right: 1rem;
+}
+nav a {
+  color: hsl(210, 3.77%, 58.43%);
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+}
+
+.navTitle {
+  display: flex;
+  align-items: center;
+}
+.navTitle img {
+  margin-right: 1rem;
+  height: 4rem;
+  width: auto;
+}
+.navTitle p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.linkComprar {
+  color: hsl(134, 52%, 37%);
+}
+.linkComprar:hover {
+  cursor: pointer;
+  color: hsl(134.23, 100%, 30.71%);
+  text-shadow: rgba(255, 255, 255, 0.664) 0px 0px 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  background: radial-gradient(hsl(210, 3.77%, 58.43%), #2f2e2d);
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+  header {
+    background: black;
+  }
+  header .btnHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .btnHeader img {
+    margin-right: 1rem;
+    height: 4rem;
+    width: auto;
+  }
+  header .btnHeader p {
+    display: none;
+  }
+  header .btnHeader .button {
+    display: block;
+    cursor: pointer;
+    background-color: darkgray;
+    border-radius: 20%;
+    box-shadow: 0.1px 0px 1px 1px white;
+  }
+  header .nav {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-wrap: column nowrap;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  header .nav.activo {
+    height: auto;
+    pointer-events: auto;
+    width: auto;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header li {
+    margin: 1rem 0;
+  }
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+  header .linkComprar {
+    color: hsl(134, 100%, 52%);
+  }
 }/*# sourceMappingURL=main.css.map */
