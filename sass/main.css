@@ -371,6 +371,72 @@
   justify-content: center;
 }
 
+@media (min-width: 400px) and (max-width: 650px) {
+  body {
+    width: -webkit-fill-available;
+  }
+  body #sectionOne {
+    display: block;
+    height: 56rem;
+    color: white;
+  }
+  body #sectionOne h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body #sectionOne .conferencia {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  body #sectionOne .conferencia img {
+    width: 300px;
+    height: 224px;
+  }
+  body #sectionOne .conferencia p {
+    margin: 10px;
+    text-align: center;
+  }
+  body .sectionTwo {
+    background-color: rgba(44, 42, 42, 0.58);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+  }
+  body .sectionTwo .titulo-tema {
+    height: 3rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+  body .sectionTwo .titulo-tema h4 {
+    background-color: black;
+    font-size: 1rem;
+    width: -webkit-fill-available;
+  }
+  body .sectionTwo .container-tema .tema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 38rem;
+    text-transform: initial;
+    text-align: center;
+  }
+  body .sectionTwo .container-tema .tema p {
+    text-align: center;
+    letter-spacing: 0px;
+    margin: 1rem;
+  }
+  body .lugar {
+    flex-direction: column;
+  }
+  body .lugar #carouselx, body .lugar #lugarYFecha {
+    width: -webkit-fill-available;
+  }
+}
 .containerCategory {
   display: flex;
   flex-direction: row;
@@ -582,5 +648,9 @@ footer a:hover {
   }
   header .linkComprar {
     color: hsl(134, 100%, 52%);
+  }
+  footer {
+    justify-content: space-evenly;
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
