@@ -36,12 +36,13 @@ h2 {
     justify-content: center;
     height: 6rem;
     text-transform: uppercase;
-    background-color: rgba(44 42 42);
+    background: linear-gradient(323deg,#00000091, black);
     color: #fff;
 }
 
 .sectionTwo {
-    background-color: rgb(44 42 42 / 58%);
+    background-color: black;
+    color: white;
     .titulo-tema{
         display: flex;
         align-items: center;
@@ -51,8 +52,6 @@ h2 {
         margin-bottom: 1rem;
         color: white;
         h4 {
-            border-radius: 5px;
-            background-color: black;
             padding: 5px;
         }
     }
@@ -86,9 +85,9 @@ h2 {
     display: flex;
     flex-direction: row;
     width: 100%;
+    background: radial-gradient(transparent, black);
     #carouselx {
         width: 50%;
-        background-color: black;
         padding: 1rem;
     #carouselExampleCaptions {
     width: auto;
@@ -99,15 +98,24 @@ h2 {
 }
 }
     #lugarYFecha {
-        width: 50%;
-        background-color: black;
-        color: white;
-        text-align: center;
+    color: white;
+    text-align: -webkit-center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    }    
+
+    .iframe {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }    
+        margin: 1rem;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        background-color: midnightblue;
+        border-radius: 30%;
+    }
 }
 
 @media (min-width:400px) and (max-width:650px) {
@@ -175,8 +183,14 @@ h2 {
 
     .lugar {
         flex-direction: column;
+        background-color: black;
+        align-items: center;
         #carouselx, #lugarYFecha {
             width: -webkit-fill-available;
+            display: contents;
+            iframe {
+                margin: 1rem 0;
+            }
         }
     }
 }
